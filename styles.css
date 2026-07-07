@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #D79348;
+    height: auto;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #005D82;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-list{
+    display: flex;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+}
+
+.education-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.school{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.school-info{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.year-gpa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-wrap: nowrap;
+}
