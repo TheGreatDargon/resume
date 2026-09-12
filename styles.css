@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,13 +13,13 @@ header {
     border-bottom: 2px solid black;
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 2.5rem;
     margin-top: 20px;
 }
 
-.contact-info{
+.contact-info {
     display: flex;
     flex-direction: row;
     font-size: 1.4rem;
@@ -28,12 +28,12 @@ h1{
     margin-bottom: 10px;
 }
 
-.contact-info img{
+.contact-info img {
     height: 30px;
     width: 30px;
 }
 
-.contact-info a{
+.contact-info a {
     text-decoration: none;
     color: black;
 }
@@ -43,7 +43,7 @@ h1{
     width: 61px;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,58 +51,59 @@ main{
     background-color: #E8EEF2;
 }
 
-.skills{
+.skills {
     display: flex;
     flex-direction: column;
 }
 
-.skills-list{
+.skills-list {
     display: flex;
 }
 
-.education{
-    display: flex;
-    flex-direction: column;
-}
-
-.education-list{
+.education {
     display: flex;
     flex-direction: column;
 }
 
-.school{
+.education-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.school {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.school-info{
+.school-info {
     display: flex;
     flex-direction: column;
     margin: 10px;
     align-items: flex-start;
 }
 
-.year-gpa{
+.year-gpa {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-wrap: nowrap;
 }
 
-.language{
+.language {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.language ul{
+.language ul {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    list-style-type: none;
 }
 
-.languages{
+.languages {
     display: flex;
     flex-direction: column;
 }
@@ -120,4 +121,157 @@ main{
 .project-tech {
     margin: 2px 0;
     font-size: 0.95rem;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #E8EEF2;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #C86432;
+    height: auto;
+    width: 100%;
+    border-bottom: 2px solid black;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0 0 6px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    width: 100%;
+    max-width: 850px;
+    box-sizing: border-box;
+    padding: 0 1.5rem 1rem 1.5rem;
+    background-color: #E8EEF2;
+    flex: 1;
+}
+
+.skills,
+.education,
+.experience,
+.project-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin: 10px 0 4px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+}
+
+h3 {
+    font-size: 0.95rem;
+    margin: 6px 0 2px 0;
+    font-weight: bold;
+}
+
+.school {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.school-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.year-gpa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    white-space: nowrap;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    margin: 2px 0 4px 0;
+    padding-left: 18px;
+
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+p {
+    margin: 2px 0;
+}
+
+.project-description,
+.project-tech {
+    margin-top: 1px;
+    margin-bottom: 2px;
+}
+
+hr {
+    display: none;
+}
+
+@media print {
+    @page {
+        size: letter portrait;
+        margin: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        background-color: #E8EEF2 !important;
+    }
+
+    header {
+        background-color: #C86432 !important;
+        padding: 4px 0;
+    }
+
+    main {
+        padding: 0 0.4in 0.3in 0.4in !important;
+        max-width: 100% !important;
+        background-color: #E8EEF2 !important;
+    }
+
 }
