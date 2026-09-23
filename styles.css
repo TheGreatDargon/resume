@@ -186,6 +186,12 @@ main {
     margin-bottom: 8px;
 }
 
+.project-description .project-tech {
+    margin: 4px 0;
+    min-height: 2.8em;
+    /* reserves equal height matching the longer 2-line description */
+}
+
 h2 {
     font-size: 1.1rem;
     margin: 10px 0 4px 0;
@@ -196,8 +202,9 @@ h2 {
 
 h3 {
     font-size: 0.95rem;
-    margin: 6px 0 2px 0;
+    margin: 20px 0 2px 0;
     font-weight: bold;
+    min-width: 6%;
 }
 
 .school {
